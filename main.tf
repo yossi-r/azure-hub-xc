@@ -248,7 +248,7 @@ resource "azurerm_network_security_group" "hub-webserver" {
 
 ############################ Compute ############################
 
-# Create jumphost instances
+# Create webserver instances
 module "bu11-webserver" {
   count              = var.num_servers
   source             = "./modules/webserver"

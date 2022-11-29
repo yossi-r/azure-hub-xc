@@ -49,6 +49,8 @@ cp admin.auto.tfvars.example admin.auto.tfvars
 vi admin.auto.tfvars
 ```
 
+terraform apply 
+export KUBECONFIG=$KUBECONFIG:./aks-cluster-config
 
 
 ## TEST your setup:

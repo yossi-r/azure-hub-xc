@@ -2,6 +2,9 @@
 cluster-config
 aks-client-cert
 aks-cluster-config
+
+_output/
+
 # Local .terraform directories
 **/.terraform/*
 .terraform.lock.hcl

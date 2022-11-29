@@ -97,3 +97,8 @@ variable "labels" {
 An optional list of labels to apply to Azure resources.
 EOD
 }
+variable "hipster_app_domain" {
+  type        = string
+  description = "FQDN for the app. If you have delegated domain `prod.example.com`, then your app_domain can be `<app_name>.prod.example.com`"
+  default     = "hipster"
+}

@@ -85,7 +85,7 @@ data "azurerm_network_interface" "sli" {
 }
 
 data "azurerm_public_ip" "cePublicIp" {
-  #name                = data.azurerm_network_interface.sli.ip_configuration[0].public_ip_address_id
   name = "master-0-public-ip"
   resource_group_name = volterra_azure_vnet_site.hub.resource_group
+  depends_on          = [volterra_tf_params_action.applyBu]
 }
